@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import voltorbImage from '../assets/images/voltorb-flip.png';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 const pageTitle = 'Andreas L';
@@ -16,7 +17,7 @@ const pageTitle = 'Andreas L';
     <body>
         <Header />
         <h1>Voltorb Flip</h1>
-        <img src="images/voltorb-flip.png" width="50%" height="50%" />
+        <img src={voltorbImage.src} width="50%" height="50%" />
         <h2>About</h2>
         <p>Paragraph text.</p>
         <Footer />

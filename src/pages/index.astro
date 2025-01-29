@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import profileImage from '../assets/images/breakfast-brian.jpg';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 const pageTitle = 'Andreas L';
@@ -15,7 +16,7 @@ const pageTitle = 'Andreas L';
     </head>
     <body>
         <Header />
-        <img src="images/breakfast-brian.jpg" />
+        <img src={profileImage.src} />
         <p>About text goes here.</p>
         <Footer />
     </body>
