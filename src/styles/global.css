@@ -48,7 +48,7 @@ p {
     margin: 0 auto;
     width: 75%;
     padding: 1rem;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 #content {
@@ -59,13 +59,18 @@ p {
     padding: 0;
 }
 
+#content h1,
+p {
+    margin: 10px;
+}
+
 #footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     width: 100%;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 #profile-image {
