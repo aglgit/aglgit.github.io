@@ -113,6 +113,8 @@ p {
     justify-content: center;
     flex-direction: column;
     width: 65vh;
+    border-radius: 8px;
+    margin: 30px;
 }
 
 .card a {
@@ -131,5 +133,4 @@ p {
     object-fit: cover;
     border-radius: 8px;
     display: block;
-    margin: 25px 25px 25px 25px;
 }
