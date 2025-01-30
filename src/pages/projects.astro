@@ -1,18 +1,19 @@
 ---
-import '../styles/global.css';
-import voltorbImage from '../assets/images/voltorb-flip.png';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Card from '../components/Card.astro';
-import ImageContainer from '../components/ImageContainer.astro';
-const pageTitle = 'Projects | Andreas L';
+import "../styles/global.css";
+import voltorbImage from "../assets/images/voltorb-flip.png";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+import ImageContainer from "../components/ImageContainer.astro";
+const pageTitle = "Projects | Andreas L";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <h1>Projects</h1>
-    <p>
-        Here's an incomplete, yet fairly comprehensive, list of my hobby
-        projects.
-    </p>
+    <div id="project-heading">
+        <p>
+            Here's an incomplete, yet fairly comprehensive, list of my hobby
+            projects.
+        </p>
+    </div>
     <Card>
         <h2>Voltorb Flip</h2>
         <ImageContainer
