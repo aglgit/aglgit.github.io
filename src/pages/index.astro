@@ -1,11 +1,18 @@
 ---
-import "../styles/global.css";
-import profileImage from "../assets/images/breakfast-brian.jpg";
-import BaseLayout from "../layouts/BaseLayout.astro";
-const pageTitle = "Home | Andreas L";
+import '../styles/global.css';
+import profileImage from '../assets/images/breakfast-brian.jpg';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = 'Home | Andreas L';
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <img id="profile-image" src={profileImage.src} />
-    <p>About text goes here.</p>
+    <div id="home">
+        <img id="profile-image" src={profileImage.src} />
+        <p>
+            Currently working full stack Spring Boot/React/SQL. Passionate about
+            code quality, automated testing and the world wide web. Strong
+            experience working in AGILE teams to deliver quality software
+            components.
+        </p>
+    </div>
 </BaseLayout>

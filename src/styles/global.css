@@ -82,6 +82,16 @@ p {
     height: auto;
     display: block;
     margin: 0 auto;
+    border-radius: 20px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+    gap: 1rem;
 }
 
 #card-container {
