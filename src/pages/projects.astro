@@ -3,6 +3,7 @@ import '../styles/global.css';
 import voltorbImage from '../assets/images/voltorb-flip.png';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Card from '../components/Card.astro';
+import ImageContainer from '../components/ImageContainer.astro';
 const pageTitle = 'Projects | Andreas L';
 ---
 
@@ -11,9 +12,19 @@ const pageTitle = 'Projects | Andreas L';
     <p>Description.</p>
     <Card>
         <h2>Voltorb Flip</h2>
-        <a href="https://aglgit.github.io/voltorb-flip/">
-            <img src={voltorbImage.src} />
-        </a>
+        <ImageContainer
+            href="https://aglgit.github.io/voltorb-flip"
+            src={voltorbImage.src}
+        />
+        <h3>About</h3>
+        <p>Paragraph text.</p>
+    </Card>
+    <Card>
+        <h2>Voltorb Flip</h2>
+        <ImageContainer
+            href="https://aglgit.github.io/voltorb-flip"
+            src={voltorbImage.src}
+        />
         <h3>About</h3>
         <p>Paragraph text.</p>
     </Card>

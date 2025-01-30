@@ -37,12 +37,6 @@ a {
     transition: color 0.3s ease;
 }
 
-img {
-    width: 50vh;
-    height: 50vh;
-    border-radius: 8px;
-}
-
 p {
     color: var(--paragraph-color);
 }
@@ -54,20 +48,15 @@ p {
     margin: 0 auto;
     width: 75%;
     padding: 1rem;
+    margin-bottom: 25px;
 }
 
 #content {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     flex: 1;
-    padding: 1rem;
-}
-
-#profile-image {
-    width: 300px;
-    height: 400px;
+    padding: 0;
 }
 
 #footer {
@@ -76,22 +65,19 @@ p {
     align-items: center;
     padding: 1rem;
     width: 100%;
+    margin-top: 25px;
 }
 
-.link {
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    border: 1px solid #3a3a3a;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+#profile-image {
+    width: 300px;
+    height: auto;
 }
 
-.link:hover {
-    background-color: var(--bg-hover-color);
-}
-
-.link img {
-    width: 20px;
-    height: 20px;
+#card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .header-links {
@@ -103,11 +89,47 @@ p {
     gap: 0.5rem;
 }
 
+.text-link {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #3a3a3a;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.text-link:hover {
+    background-color: var(--bg-hover-color);
+}
+
+.icon-link img {
+    width: 30px;
+    height: 30px;
+}
+
 .card {
     background-color: var(--bg-card-color);
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    width: 65vh;
+}
+
+.card a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card a img {
+    width: 80%;
+    height: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 25px 25px 25px 25px;
 }
