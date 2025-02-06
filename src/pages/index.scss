@@ -1,0 +1,33 @@
+@use "../styles/variables.scss" as *;
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+    gap: 1rem;
+}
+
+#profile-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    #profile-image {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}

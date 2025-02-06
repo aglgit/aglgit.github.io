@@ -1,0 +1,14 @@
+@use "../../styles/variables.scss" as *;
+
+.text-link {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #3a3a3a;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.text-link:hover {
+    background-color: var(--bg-hover-color);
+}
