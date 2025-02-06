@@ -1,13 +1,32 @@
 ---
-title: My Third Blog Post
+title: Building a Blog with Astro and Github Pages
 author: Andreas L
-description: "I had some challenges, but asking in the community really helped!"
+description: "Describing my frontend journey with HTML/CSS/TypeScript and Astro."
 image:
     url: "https://docs.astro.build/assets/rays.webp"
     alt: "The Astro logo on a dark background with rainbow rays."
 pubDate: 2025-02-05
-tags: ["astro", "learning in public", "setbacks", "community"]
+tags: ["astro", "html/css/ts", "tech-stack"]
 layout: "../../../layouts/MarkdownPostLayout.astro"
 ---
 
-It wasn't always smooth sailing, but I'm enjoying building with Astro. And, the [Discord community](https://astro.build/chat) is really friendly and helpful!
+This page will describe how i built my personal website, including a blog.
+
+## Tech stack
+
+### **Frontend**
+
+- **Framework/Library:** Astro
+- **UI Components:** SASS/SCSS, Tailwind CSS
+- **Build Tool:** Vite
+
+### **Infrastructure & DevOps**
+
+- **Hosting:** Github Pages
+- **CI/CD:** GitHub Actions
+
+## **Other Tools & Services**
+
+- **Version Control:** Git, GitHub
+- **Project Management:** Excalidraw
+- **Code Quality:** ESLint, Prettier
