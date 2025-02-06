@@ -1,0 +1,10 @@
+---
+import "./linkWrapper.scss";
+const { href } = Astro.props;
+---
+
+<div class="link-wrapper">
+    <a href={href}>
+        <slot />
+    </a>
+</div>
