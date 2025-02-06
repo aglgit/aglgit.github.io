@@ -3,7 +3,7 @@
 #header {
     @include flex-row();
     padding: 0.5rem;
-    margin: 0 auto 10px auto;
+    margin: 10px auto 0 auto;
 }
 
 .header-links {
