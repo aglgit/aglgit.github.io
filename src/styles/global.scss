@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@use "tailwindcss" as *;
 
 :root {
     --bg-color: #242629;
@@ -8,20 +8,23 @@
     --bg-hover-color: #7f5af0;
 }
 
-* {
-    box-sizing: border-box;
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-row {
+    display: flex;
+    align-items: center;
 }
 
 html,
 body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+    @include flex-col();
+    justify-content: center;
     text-align: center;
-}
-
-html {
+    min-height: 100vh;
     background-color: var(--bg-color);
     color: var(--heading-color);
     font-family: "Inter", sans-serif;
@@ -30,8 +33,6 @@ html {
 body {
     padding: 1rem;
     line-height: 1.5;
-    display: flex;
-    flex-direction: column;
 }
 
 a {
@@ -45,20 +46,13 @@ p {
 }
 
 #header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    @include flex-row();
     margin: 0 auto 10px auto;
-    width: 90%;
-    max-width: 800px;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 #content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flex-col();
     flex: 1;
     padding: 0;
     width: 100%;
@@ -75,9 +69,8 @@ p {
 }
 
 #footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-row();
+
     padding: 1rem;
     width: 100%;
     margin-top: auto;
@@ -105,19 +98,16 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 1rem;
     width: 100%;
 }
 
 .header-links {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .footer-links {
     display: flex;
-    flex-wrap: wrap;
     gap: 0.5rem;
 }
 
