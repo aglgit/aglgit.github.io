@@ -1,0 +1,18 @@
+:root {
+    --bg-color: #242629;
+    --bg-card-color: #16161a;
+    --heading-color: #fffffe;
+    --paragraph-color: #94a1b2;
+    --bg-hover-color: #7f5af0;
+}
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-row {
+    display: flex;
+    align-items: center;
+}

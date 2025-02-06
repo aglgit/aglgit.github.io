@@ -1,0 +1,11 @@
+@use "../../styles/variables.scss" as *;
+
+#header {
+    @include flex-row();
+    padding: 0.5rem;
+    margin: 0 auto 10px auto;
+}
+
+.header-links {
+    @include flex-row();
+}

@@ -1,23 +1,4 @@
-@use "tailwindcss" as *;
-
-:root {
-    --bg-color: #242629;
-    --bg-card-color: #16161a;
-    --heading-color: #fffffe;
-    --paragraph-color: #94a1b2;
-    --bg-hover-color: #7f5af0;
-}
-
-@mixin flex-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-@mixin flex-row {
-    display: flex;
-    align-items: center;
-}
+@use "./variables.scss" as *;
 
 html,
 body {
@@ -45,35 +26,9 @@ p {
     color: var(--paragraph-color);
 }
 
-#header {
-    @include flex-row();
-    margin: 0 auto 10px auto;
-    padding: 0.5rem;
-}
-
-#content {
-    @include flex-col();
-    flex: 1;
-    padding: 0;
-    width: 100%;
-}
-
-#content h1,
-p {
-    margin: 10px;
-}
-
 #project-heading {
     max-width: 60vh;
     margin: 0 auto;
-}
-
-#footer {
-    @include flex-row();
-
-    padding: 1rem;
-    width: 100%;
-    margin-top: auto;
 }
 
 #profile-image {
@@ -100,15 +55,6 @@ p {
     justify-content: center;
     gap: 1rem;
     width: 100%;
-}
-
-.header-links {
-    display: flex;
-}
-
-.footer-links {
-    display: flex;
-    gap: 0.5rem;
 }
 
 .text-link {
@@ -165,11 +111,6 @@ p {
         font-size: 12px;
     }
 
-    #header {
-        flex-direction: column;
-        text-align: center;
-    }
-
     #card-container {
         flex-direction: column;
         width: 100%;
@@ -177,16 +118,6 @@ p {
 
     .card {
         width: 90%;
-    }
-
-    #footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #content h1,
-    p {
-        margin: 5px;
     }
 
     #profile-image {
