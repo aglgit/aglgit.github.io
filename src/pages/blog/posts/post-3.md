@@ -6,7 +6,7 @@ image:
     url: "https://docs.astro.build/assets/rays.webp"
     alt: "The Astro logo on a dark background with rainbow rays."
 pubDate: 2025-02-05
-tags: ["astro", "html/css/ts", "tech-stack"]
+tags: ["astro", "html-css-ts", "tech-stack"]
 layout: "../../../layouts/MarkdownPostLayout.astro"
 ---
 
