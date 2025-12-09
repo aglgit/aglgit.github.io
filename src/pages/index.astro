@@ -1,5 +1,5 @@
 ---
-import "./index.scss";
+import "./_index.scss";
 import profileImage from "../assets/images/breakfast-brian.jpg";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Home | Andreas L";
@@ -7,12 +7,54 @@ const pageTitle = "Home | Andreas L";
 
 <BaseLayout pageTitle={pageTitle}>
     <div id="home">
-        <img id="profile-image" src={profileImage.src} />
-        <p>
-            Currently working full stack Spring Boot/React/SQL. Passionate about
-            code quality, automated testing and the world wide web. Strong
-            experience working in AGILE teams to deliver quality software
-            components.
-        </p>
+        <div class="hero-section">
+            <div class="profile-container">
+                <div class="profile-image-wrapper">
+                    <img
+                        id="profile-image"
+                        src={profileImage.src}
+                        alt="Andreas L"
+                    />
+                    <div class="profile-ring"></div>
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <p class="greeting">Hi, I'm</p>
+                <h1 class="name">Andreas L</h1>
+                <h2 class="title">Full Stack Developer</h2>
+                <p class="description">
+                    Passionate about building exceptional digital experiences
+                    with
+                    <span class="highlight">Spring Boot</span>,
+                    <span class="highlight">React</span>, and
+                    <span class="highlight">SQL</span>. Specialized in code
+                    quality, automated testing, and modern web development.
+                </p>
+
+                <div class="tech-stack">
+                    <h3>Technologies I work with</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">AGILE</span>
+                        <span class="tech-tag">Testing</span>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="/projects" class="btn btn-primary">View My Work</a>
+                    <a href="/blog" class="btn btn-secondary">Read My Blog</a>
+                    <a
+                        href="https://github.com/aglgit"
+                        class="btn btn-outline"
+                        target="_blank"
+                        rel="noopener noreferrer">GitHub Profile</a
+                    >
+                </div>
+            </div>
+        </div>
     </div>
 </BaseLayout>

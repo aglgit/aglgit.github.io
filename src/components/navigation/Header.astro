@@ -3,11 +3,18 @@ import TextLink from "../links/TextLink.astro";
 import "./header.scss";
 ---
 
-<div id="header">
-    <nav class="header-links">
-        <TextLink href="/" text="Home" />
-        <TextLink href="/projects" text="Projects" />
-        <TextLink href="/blog" text="Blog" />
-        <TextLink href="https://github.com/aglgit" text="Github" />
-    </nav>
-</div>
+<header id="header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="/">
+                <span class="logo-text">AL</span>
+            </a>
+        </div>
+        <nav class="header-links">
+            <TextLink href="/" text="Home" />
+            <TextLink href="/projects" text="Projects" />
+            <TextLink href="/blog" text="Blog" />
+            <TextLink href="https://github.com/aglgit" text="GitHub" />
+        </nav>
+    </div>
+</header>

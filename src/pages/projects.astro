@@ -1,30 +1,46 @@
 ---
-import "./projects.scss";
+import "./_projects.scss";
 import voltorbImage from "../assets/images/voltorb-flip.png";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Card from "../components/Card.astro";
 import ImageContainer from "../components/ImageContainer.astro";
+import "../components/card.scss";
 const pageTitle = "Projects | Andreas L";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
     <div id="project-heading">
+        <h1>Projects</h1>
         <p>
             Here's an incomplete, yet fairly comprehensive, list of my hobby
-            projects.
+            projects. Each one represents a learning journey and exploration of
+            new technologies.
         </p>
     </div>
-    <Card>
-        <h2>Voltorb Flip</h2>
-        <ImageContainer
-            href="https://aglgit.github.io/voltorb-flip"
-            src={voltorbImage.src}
-        />
-        <h3>About</h3>
-        <p>
-            This is a project for me to learn HTML, CSS and
-            JavaScript/TypeScript. It is heavily based on Voltorb Flip by
-            Brandon Stein as well as the original game.
-        </p>
-    </Card>
+    <div id="card-container">
+        <Card>
+            <h2>Voltorb Flip</h2>
+            <ImageContainer
+                href="https://aglgit.github.io/voltorb-flip"
+                src={voltorbImage.src}
+            />
+            <h3>About</h3>
+            <p>
+                This is a project for me to learn HTML, CSS and
+                JavaScript/TypeScript. It is heavily based on Voltorb Flip by
+                Brandon Stein as well as the original game.
+            </p>
+            <div style="margin-top: auto;">
+                <a
+                    href="https://aglgit.github.io/voltorb-flip"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                    style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--accent-primary); color: var(--bg-color); border-radius: 8px; font-weight: 600; transition: all 0.3s ease;"
+                >
+                    View Project
+                </a>
+            </div>
+        </Card>
+    </div>
 </BaseLayout>

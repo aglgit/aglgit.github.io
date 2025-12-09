@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Card from "../../components/Card.astro";
 import LinkWrapper from "../../components/links/LinkWrapper.astro";
+import "../../components/card.scss";
 
 const pageTitle = "Blog | Andreas L";
 const posts = await Astro.glob("./posts/*.md");
@@ -13,30 +14,40 @@ posts.sort(
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <p>Get the RSS feed <a href="/blog/rss.xml">here</a>.</p>
-    {
-        posts.map((post: any) => (
-            <LinkWrapper href={post.url}>
-                <Card>
-                    <p>
-                        {new Date(post.frontmatter.pubDate).toLocaleDateString(
-                            "en-US",
-                            {
-                                year: "numeric",
-                                month: "long",
-                                day: "numeric",
-                            }
-                        )}
-                    </p>
-                    <h2>{post.frontmatter.title}</h2>
-                    <img
-                        src={post.frontmatter.image.url}
-                        alt={post.frontmatter.image.alt}
-                        width="300"
-                    />
-                    <p>{post.frontmatter.description}</p>
-                </Card>
-            </LinkWrapper>
-        ))
-    }
+    <div style="max-width: 1200px; margin: 0 auto; padding: 3rem 2rem;">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h1 style="margin-bottom: 1rem;">Blog</h1>
+            <p style="font-size: 1.1rem;">
+                Thoughts, tutorials, and insights on web development. <a
+                    href="/blog/rss.xml">RSS feed</a
+                >
+            </p>
+        </div>
+        <div id="card-container">
+            {
+                posts.map((post: any) => (
+                    <LinkWrapper href={post.url}>
+                        <Card>
+                            <p style="color: var(--accent-primary); font-size: 0.9rem; margin: 0;">
+                                {new Date(
+                                    post.frontmatter.pubDate
+                                ).toLocaleDateString("en-US", {
+                                    year: "numeric",
+                                    month: "long",
+                                    day: "numeric",
+                                })}
+                            </p>
+                            <h2>{post.frontmatter.title}</h2>
+                            <img
+                                src={post.frontmatter.image.url}
+                                alt={post.frontmatter.image.alt}
+                                style="width: 100%; height: auto; border-radius: 12px;"
+                            />
+                            <p>{post.frontmatter.description}</p>
+                        </Card>
+                    </LinkWrapper>
+                ))
+            }
+        </div>
+    </div>
 </BaseLayout>

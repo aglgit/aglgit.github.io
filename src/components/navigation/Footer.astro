@@ -2,13 +2,22 @@
 import githubIcon from "../../assets/images/github-mark-white.png";
 import IconLink from "../links/IconLink.astro";
 import "./footer.scss";
+const currentYear = new Date().getFullYear();
 ---
 
-<div id="footer">
-    <nav class="footer-links">
-        <IconLink
-            href="https://github.com/aglgit/aglgit.github.io"
-            src={githubIcon.src}
-        />
-    </nav>
-</div>
+<footer id="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <p class="footer-text">Built with Astro · Designed by Andreas L</p>
+            <p class="footer-copyright">
+                © {currentYear} Andreas L. All rights reserved.
+            </p>
+        </div>
+        <nav class="footer-links">
+            <IconLink
+                href="https://github.com/aglgit/aglgit.github.io"
+                src={githubIcon.src}
+            />
+        </nav>
+    </div>
+</footer>

@@ -1,9 +1,19 @@
 :root {
-    --bg-color: #242629;
-    --bg-card-color: #16161a;
-    --heading-color: #fffffe;
-    --paragraph-color: #94a1b2;
-    --bg-hover-color: #7f5af0;
+    --bg-color: #0a0a0f;
+    --bg-secondary: #121218;
+    --bg-card-color: #1a1a24;
+    --heading-color: #ffffff;
+    --paragraph-color: #a8b2d1;
+    --accent-primary: #64ffda;
+    --accent-secondary: #5865f2;
+    --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --hover-color: #64ffda;
+    --border-color: #2a2a3e;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --shadow-accent: 0 0 20px rgba(100, 255, 218, 0.15);
+    --transition-speed: 0.3s;
 }
 
 @mixin flex-col {
@@ -15,4 +25,11 @@
 @mixin flex-row {
     display: flex;
     align-items: center;
+}
+
+@mixin gradient-text {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }

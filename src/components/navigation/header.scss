@@ -1,11 +1,69 @@
 @use "../../styles/variables.scss" as *;
 
 #header {
-    @include flex-row();
-    padding: 0.5rem;
-    margin: 10px auto 0 auto;
+    width: 100%;
+    background: rgba(10, 10, 15, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow-md);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.logo a {
+    text-decoration: none;
+    transition: all var(--transition-speed) ease;
+}
+
+.logo-text {
+    @include gradient-text;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transition: all var(--transition-speed) ease;
+}
+
+.logo a:hover .logo-text {
+    transform: scale(1.05);
+    display: inline-block;
 }
 
 .header-links {
-    @include flex-row();
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 1rem;
+    }
+
+    .header-links {
+        gap: 1rem;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-links {
+        gap: 0.75rem;
+    }
 }
