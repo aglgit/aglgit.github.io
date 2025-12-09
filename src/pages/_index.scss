@@ -218,7 +218,7 @@
 @media (max-width: 968px) {
     .hero-section {
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 2rem;
         text-align: center;
     }
 
@@ -227,44 +227,84 @@
     }
 
     .profile-image-wrapper {
-        width: 220px;
-        height: 220px;
+        width: 150px;
+        height: 150px;
     }
 
     .hero-content {
         align-items: center;
+        gap: 0.5rem;
     }
 
     .description {
         text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .tech-stack {
+        margin-top: 0.25rem;
     }
 
     .cta-buttons {
         justify-content: center;
+        margin-top: 0.5rem;
     }
 }
 
 @media (max-width: 600px) {
     #home {
-        padding: 1rem 0.5rem;
+        padding: 1rem 0.75rem;
     }
 
     .profile-image-wrapper {
-        width: 180px;
-        height: 180px;
+        width: 130px;
+        height: 130px;
     }
 
     .hero-section {
-        gap: 2rem;
+        gap: 1.5rem;
+    }
+
+    .hero-content {
+        gap: 0.4rem;
+    }
+
+    .greeting {
+        font-size: 0.85rem;
+    }
+
+    .name {
+        font-size: clamp(1.5rem, 8vw, 2rem);
+    }
+
+    .title {
+        font-size: clamp(1rem, 5vw, 1.25rem);
+    }
+
+    .description {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .tech-stack h3 {
+        font-size: 0.75rem;
+    }
+
+    .tech-tag {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.75rem;
     }
 
     .cta-buttons {
         flex-direction: column;
         width: 100%;
+        gap: 0.5rem;
     }
 
     .btn {
         width: 100%;
         text-align: center;
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
     }
 }

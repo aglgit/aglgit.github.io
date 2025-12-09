@@ -38,13 +38,30 @@
 }
 
 @media (max-width: 768px) {
+    #footer {
+        padding: 1rem 0;
+    }
+
     .footer-container {
         flex-direction: column;
         text-align: center;
         padding: 0 1rem;
+        gap: 1rem;
     }
 
     .footer-content {
         align-items: center;
+    }
+
+    .footer-text,
+    .footer-copyright {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-text,
+    .footer-copyright {
+        font-size: 0.8rem;
     }
 }

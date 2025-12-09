@@ -33,3 +33,17 @@
 .text-link a:hover::after {
     width: 80%;
 }
+
+@media (max-width: 768px) {
+    .text-link a {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-link a {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.85rem;
+    }
+}
