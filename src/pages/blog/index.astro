@@ -14,10 +14,10 @@ posts.sort(
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <div style="max-width: 1200px; margin: 0 auto; padding: 3rem 2rem;">
-        <div style="text-align: center; margin-bottom: 3rem;">
-            <h1 style="margin-bottom: 1rem;">Blog</h1>
-            <p style="font-size: 1.1rem;">
+    <div style="max-width: 900px; margin: 0 auto; padding: 1rem;">
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+            <h1 style="margin-bottom: 0.25rem; font-size: 1.75rem;">Blog</h1>
+            <p style="font-size: 0.9rem; margin: 0;">
                 Thoughts, tutorials, and insights on web development. <a
                     href="/blog/rss.xml">RSS feed</a
                 >
@@ -28,7 +28,7 @@ posts.sort(
                 posts.map((post: any) => (
                     <LinkWrapper href={post.url}>
                         <Card>
-                            <p style="color: var(--accent-primary); font-size: 0.9rem; margin: 0;">
+                            <p style="color: var(--accent-primary); font-size: 0.8rem; margin: 0;">
                                 {new Date(
                                     post.frontmatter.pubDate
                                 ).toLocaleDateString("en-US", {
