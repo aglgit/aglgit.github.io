@@ -10,7 +10,7 @@ tags: ["astro", "html-css-ts", "tech-stack"]
 layout: "../../../layouts/MarkdownPostLayout.astro"
 ---
 
-This page will describe how i built my personal website, including a blog.
+This page describes how i built my personal website, including a blog.
 
 ## Tech stack
 
